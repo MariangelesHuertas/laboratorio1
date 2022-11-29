@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Travel Authorization Form</title>
+</head>
+<body>
+    <h1>Travel Authorization Form </h1>
+    <h2> Seccion A: Informacion del cliente</h2>
+    <form id="form-order">
+        <p>
+            <label for="name">Cargo (Obligatorio) :</label>
+            <input type="text" name="name" id="name"
+            placeholder="EN MAYUSCULA" max="100" min="4" step="2">(entre 4 y 100 caracteres)
+        </p>
+        <p>
+            <label for="name">Nombres (Obligatorio)</label>
+            <input type="text" name="name" id="name"
+            placeholder="EN MAYUSCULA" max="100" min="4" step="2">(entre 4 y 100 caracteres)
+        </p>
+        <p>
+            <label for="name">Primer Apellido (Obligatorio) :</label>
+            <input type="text" name="name" id="name"
+            placeholder="EN MAYUSCULA" max="100" min="4" step="2">(entre 4 y 100 caracteres)
+        </p>
+        <p>
+            <label for="name">Segundo Apellido (Obligatorio) :</label>
+            <input type="text" name="name" id="name"
+            placeholder="EN MAYUSCULA" max="100" min="4" step="2">(entre 4 y 100 caracteres)
+        </p>
+        <p>
+            <label for="email">Email (Obligatorio) :</label>
+            <input type="text" name="name" id="email"
+            placeholder="ejemplo@tecsup.com.pe">
+        </p>
+        <p>
+            <label for="telefono">Numero de Telefono (Obligatorio) :</label>
+            <input type="text" name="telefono" id="telefono"
+            placeholder="999999999"
+            >
+        </p>
+    </form>
+        <h2> Seccion B: Informacion del viaje</h2>
+        <form>
+        <p>
+            <label for="aerolinea" id="aerolinea">Nombre de la aerolinea :</label>
+            <select name="Seleccione una aerolinea">
+                <option value="0">Selecciones una aerolinea</option>
+                <option value="1">LATAM</option>
+                <option value="2">Aeromexico</option>
+                <option value="3">Copa Airlines</option>
+                <option value="4">Condor</option>
+            </select>
+        </p>
+        <p>
+            <label for="name">Destino :</label>
+            <input type="text" name="name" id="name">
+        </p>
+        <p>
+            <label for="fecha">Fecha de salida :</label>
+            <input type="date" name="fecha" id="fecha">
+        </p>
+        <p>
+            <label for="fecha">Fecha de regreso :</label>
+            <input type="date" name="fecha" id="fecha">
+        </p>
+        <p>
+            <label for="number">Coste estimado :</label>
+            <input type="number" id="costo" name="costo" min="100" max="1000">
+        </p>
+        <p>
+            <label for="cliente">Incluye la visita al cliente?</label>
+            <input type="checkbox" name="casilla">
+        </p>
+        <p>Gastos adicionales estimados</p>
+        <p>
+            <label for="number">Alquiler de coche :</label>
+            <input type="number" id="gastos" name="gastos">
+        </p>
+        <p>
+            <label for="number">Hotel :</label>
+            <input type="number" id="gastos" name="gastos">
+        </p>
+        <p>
+            <label for="number">Comidas :</label>
+            <input type="number" id="gastos" name="gastos">
+        </p>
+        <p>
+            <label for="number">Hotel :</label>
+            <input type="number" id="gastos" name="gastos">
+        </p>
+        <p>
+            <label for="number">Total estimado :</label>
+            <input type="number" id="gastos" name="gastos" 
+            placeholder="0.00$">
+        </p>
+        <p>
+            <fieldset>
+                <legend>
+                    Metodos de pago utilizados :
+                </legend>
+            <p><label><input type="radio" name="boton" value="1" checked="">Metalico</label></p>
+            <p><label><input type="radio" name="boton" value="2">Tarjeta de credito</label></p>
+            <p><label><input type="radio" name="boton" value="3">Cheque</label></p>
+        </fieldset>
+        </p>
+        <p>
+        <fieldset>
+            <legend>
+                Proposito del viaje :
+            </legend>
+            <textarea name="texto" rows="10" cols="130"></textarea>
+        </fieldset>
+        </p>
+    </form> 
+
+        <input type="submit" name="Enviar">
+    
+</body>
+</html>
